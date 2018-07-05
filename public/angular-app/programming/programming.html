@@ -3,24 +3,8 @@
 	<p style="font-family:Satisfy;">"If opportunity doesn't knock, build a door" - Milton Berle</p>
 </div>
 	<div class="container-fluid" id="main">
-      <div class="row">
-        <div id="proj1" class="col-xs-12 col-md-6 siteContainer">
-          <p style="font-size: 20pt;">DRUMPAD</p>
+        <div ng-repeat="project in vm.projects" id="proj1" class="siteContainer">
+          <p style="font-size: 20pt;">{{project.name}}</p>
           <a href="drumpad.html"><img src="/images/hardware.png" alt="" class="site"></a>
         </div>
-        <div id="proj2" class="col-xs-12 col-md-6 siteContainer">
-          <p style="font-size: 20pt;">FORM</p>
-          <a href="form.html"><img src="/images/hardware.png" alt="" class="site"></a>
-        </div>
-      </div>
-      <div class="row">
-        <div id="proj3" class="col-xs-12 col-md-6 siteContainer">
-          <p style="font-size: 20pt;">GALLERY</p>
-          <a href="gallery.html"><img src="/images/hardware.png" alt="" class="site"></a>
-        </div>
-        <div id="proj4" class="col-xs-12 col-md-6 siteContainer">
-          <p style="font-size: 20pt;">STUPA-DICT</p>
-          <a href="stupadict.html"><img src="/images/hardware.png" alt="" class="site"></a>
-        </div>
-    </div>
 </div>

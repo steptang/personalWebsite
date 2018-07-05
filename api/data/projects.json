@@ -1,0 +1,14 @@
+[{
+	"name": "Herlocked",
+	"caption": "A phone controlled door lock that is easily installable into pre-existing locks. FemmeHacks 2017 Intel Best Hardware Hack, Softeon Most Innovative Hack",
+	"description": "",
+	"picture": "",
+	"type": "software"
+},
+{
+	"name": "Vehicular Edge Simulator",
+	"caption": "An event driven simulation that models autonomous vehicles and their service requests to the cloud.",
+	"description": "",
+	"picture": "",
+	"type": "software"
+}]

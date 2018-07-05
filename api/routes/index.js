@@ -8,7 +8,7 @@ var router = express.Router();
 
 //require methods from the users.controllers.js file
 var ctrlUsers = require('../controllers/users.controllers.js');
-//var ctrlProject = require('../controllers/project.controllers.js');
+var ctrlProject = require('../controllers/project.controllers.js');
 
 //No Authentication Required
 router
@@ -44,6 +44,15 @@ router
 router
 	.route('/users/:userId/change-password')
 	.post(ctrlUsers.authenticate, ctrlUsers.usersChangePassword);
+
+//Project
+router
+	.route('/projects/')
+	.get(ctrlProject.projectGetAll);
+
+router
+	.route('/projects/:projectId/')
+	.get(ctrlProject.projectGetOne);
 
 //export to server file
 module.exports = router;

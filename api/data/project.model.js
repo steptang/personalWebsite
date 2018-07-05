@@ -16,6 +16,10 @@ var projectSchema = new mongoose.Schema({
 	picture: {
 		type: String,
 		required: true
+	},
+	type: {
+		type: String,
+		required: true
 	}
 });
 
