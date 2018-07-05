@@ -1,3 +1,3 @@
 # AWS Console App
 
-This repo contains the AWS Console App made with the mean stack and connections to AWS lambda functions, allowing for controlling and managing Siemens AWS Instances.
+This repo contains Stephanie's personal website made with the mean stack. To run, please clone the repo, run npm install, and then run nodemon. Access the site at http://localhost:8080/. Enjoy!
