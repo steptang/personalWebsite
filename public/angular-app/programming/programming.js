@@ -4,4 +4,5 @@ function ProgrammingController() {
 	var vm = this;
 
 	vm.title = "About Me"
+
 };

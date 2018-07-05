@@ -1485,3 +1485,34 @@ h6 a:hover {
 	color: #fff;
 }
 
+.site{
+  max-width: 100%;
+  z-index: 2;
+}
+
+.siteContainer{
+  padding: 5%;
+  margin: 4%;
+  background-color: #FBEEE6;
+  outline: 5px solid;
+  outline-color: #313131;
+  outline-offset: 10px;
+  color: #313131;
+  transition: margin 0.5s ease;
+}
+
+#proj1:hover{
+	margin: 3%;
+}
+
+#proj2:hover{
+	margin: 3%;
+}
+
+#proj3:hover{
+	margin: 3%;
+}
+
+#proj4:hover{
+	margin: 3%;
+}
