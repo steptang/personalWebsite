@@ -1,0 +1,46 @@
+<!-- /public/angular-app/register/register.html -->
+
+<!-- Header -->
+<div class="jumbotron text-center">
+	<h1>Register</h1>
+</div>
+<!-- /Header -->
+
+<div class="table-container">
+	<!-- Success and Error alert -->
+	<div ng-if="vm.message" class="alert alert-success" role="alert">
+		<p>{{ vm.message }}</p>
+	</div>
+	<div ng-if="vm.error" class="alert alert-danger" role="alert">
+		<p>{{ vm.error }}</p>
+	</div>
+	<!-- /success and error alert -->
+
+	<!-- Registration Form -->
+	<form ng-hide="vm.message" name="register" ng-submit="vm.register()">
+		<div class="form-group">
+			<label style="font-size:10pt" for="name">Name</label>
+			<input type="name" class="form-control" id="name" placeholder="Name" ng-model="vm.name" autocapitalize="none">
+		</div>
+		<div class="form-group">
+			<label style="font-size:10pt" for="username">Username</label>
+			<input type="username" class="form-control" id="username" placeholder="Username" ng-model="vm.username" autocapitalize="none">
+		</div>
+		<div class="form-group">
+			<label style="font-size:10pt" for="email">Siemens Healthineers Email</label>
+			<input type="email" pattern=".+@siemens-healthineers.com" class="form-control" id="email" placeholder="Email" ng-model="vm.email" autocapitalize="none">
+		</div>
+		<div class="form-group">
+			<label style="font-size:10pt" for="password">Password</label>
+			<input type="password" class="form-control" id="password" placeholder="Password" ng-model="vm.password" autocapitalize="none">
+		</div>
+		<div class="form-group">
+			<label style="font-size:10pt" for="password-repeat">Repeat Password</label>
+			<input type="password" class="form-control" id="password-repeat" placeholder="Password" ng-model="vm.passwordRepeat" autocapitalize="none">
+		</div>
+		<p align="center">
+			<button type="submit" class="btn btn-success">Register</button>
+		</p>
+	</form>
+	<!-- /Registration Form -->
+</div>

@@ -1,0 +1,118 @@
+<!-- /public/angular-app/profile/profile.html -->
+
+<!-- Header -->
+<div class="jumbotron text-center">
+	<h1>Account Information</h1>
+	<h3>{{ vm.user.name }}</h3>
+</div>
+<!-- /Header -->
+
+<!-- Change Password Modal -->
+<div id="password-modal" class="password-alert-modal">
+	<div class="alert-modal-content">
+		<div class="modal-alert-header">
+			<span class="close" id="passwordclose">&times;</span>
+			<h2 id="password-title">Modal Header</h2>
+		</div>
+		<div id="password-message" class="modal-alert-body">
+			<div class="form-group">
+				<label style="font-size:10pt" for="oldpassword">Old Password</label>
+				<input type="password" class="form-control" id="oldpassword" ng-model="vm.oldpassword" placeholder="Old Password" autocapitalize="none">
+			</div>
+			<div class="form-group">
+				<label style="font-size:10pt" for="newpassword">New Password</label>
+				<input type="password" class="form-control" id="newpassword" ng-model="vm.newpassword" placeholder="New Password" autocapitalize="none">
+			</div>
+			<div class="form-group">
+				<label style="font-size:10pt" for="newpasswordrepeat">Repeat New Password</label>
+				<input type="password" class="form-control" id="newpasswordrepeat" ng-model="vm.newpasswordrepeat" placeholder="New Password Repeat" autocapitalize="none">
+			</div>
+		</div>
+		<div class="modal-alert-footer">
+			<button class="button-five" id="password-ok-btn">OK</button>
+		</div>
+	</div>
+</div>
+<!-- /Change Password Modal -->
+
+<!-- Change Email Modal -->
+<div id="email-modal" class="email-alert-modal">
+	<div class="alert-modal-content">
+		<div class="modal-alert-header">
+			<span class="close" id="emailclose">&times;</span>
+			<h2 id="email-title">Modal Header</h2>
+		</div>
+		<div id="email-message" class="modal-alert-body">
+			<div class="form-group">
+				<label style="font-size:10pt" for="newemail">New Siemens Email</label>
+				<input type="email" class="form-control" id="newemail" ng-model="vm.newemail" placeholder="New email" autocapitalize="none" pattern=".+@siemens-healthineers.com">
+			</div>
+			<div class="form-group">
+				<label style="font-size:10pt" for="newemailrepeat">Repeat New Email</label>
+				<input type="email" class="form-control" id="newemailrepeat" ng-model="vm.newemailrepeat" placeholder="New email Repeat" autocapitalize="none" pattern=".+@siemens-healthineers.com">
+			</div>
+			<div class="form-group">
+				<label style="font-size:10pt" for="oldemail">Password</label>
+				<input type="password" class="form-control" id="oldemail" ng-model="vm.oldemail" placeholder="Password" autocapitalize="none">
+			</div>
+		</div>
+		<div class="modal-alert-footer">
+			<p class="align-center">
+			<button class="button-five" id="email-ok-btn">OK</button>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- /Change Email Modal -->
+
+<!-- Alert Modal -->
+<div id="alert-modal" class="alert-modal">
+	<div class="alert-modal-content">
+		<div class="modal-alert-header">
+			<span class="close" id="alertclose">&times;</span>
+			<h2 id="alert-title">Modal Header</h2>
+		</div>
+		<div id="alert-message" class="modal-alert-body">
+			<p>Some text in the Modal Body</p>
+		</div>
+		<div class="modal-alert-footer">
+			<button class="button-five" id="alert-ok-btn">OK</button>
+		</div>
+	</div>
+</div>
+<!-- /Alert Modal -->
+
+<!-- Table for User Data -->
+<div class="table-container">
+	<div class="scroll-container"> <!-- allowing horizontal scrolling for the table -->
+		<table class="table table-striped">
+			<tbody>
+				<tr> <!-- table data -->
+					<td><b>Username</b></td>
+					<td>{{vm.user.username}}</td>
+				</tr>
+				<tr>
+					<td><b>Name</b></td>
+					<td>{{vm.user.name}}</td>
+				</tr>
+				<tr>
+					<td><b>Password</b></td>
+					<td>-<button class="inline button-seven pull-right" id="edit_password_button">Change Password</button></td>
+				</tr>
+				<tr>
+					<td><b>Email</b></td>
+					<td>{{vm.user.email}}<button class="inline button-seven pull-right" id="edit_email_button">Change Email</button></td>
+				</tr>
+				<tr>
+					<td><b>Registered</b></td>
+					<td><i class="fa fa-check-circle-o" aria-hidden="true" style="color:#14A62F" ng-if="vm.user.registered"></i><i class="fa fa-times-circle-o" aria-hidden="true" style="color:#D43F35" ng-if="!vm.user.registered"></i></td>
+				</tr>
+				<tr>
+					<td><b>Admin</b></td>
+					<td><i class="fa fa-check-circle-o" aria-hidden="true" style="color:#14A62F" ng-if="vm.user.admin"></i><i class="fa fa-times-circle-o" aria-hidden="true" style="color:#D43F35" ng-if="!vm.user.admin"></i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- /Table for User Data -->

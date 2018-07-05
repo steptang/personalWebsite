@@ -1,0 +1,78 @@
+<!-- /public/angular-app/manage-users/manage-users.html -->
+
+<!-- Header -->
+<div class="jumbotron text-center">
+	<h1>{{vm.title}}</h1>
+</div>
+<!-- /Header -->
+
+<!-- Alert Modal -->
+<div id="alert-modal" class="alert-modal">
+	<div class="alert-modal-content">
+		<div class="modal-alert-header">
+			<span class="close" id="alertclose">&times;</span>
+			<h2 id="alert-title">Modal Header</h2>
+		</div>
+		<div id="alert-message" class="modal-alert-body">
+			<p>Some text in the Modal Body</p>
+		</div>
+		<div class="modal-alert-footer">
+			<button class="button-five" id="alert-ok-btn">OK</button>
+		</div>
+	</div>
+</div>
+<!-- /Alert Modal -->
+
+<!-- Button Bar -->
+<div class="button-bar-container">
+	<button class="inline button-one" id="approve_button"><i class="fa fa-check fa-fw" aria-hidden="true" style="color:#14A62F"></i>Approve User Registration</button>
+	<button class="inline button-one" id="make_admin_button"><i class="fa fa-id-badge fa-fw" aria-hidden="true" style="color:#193347"></i>Make Admin</button>
+	<button class="inline button-one" id="remove_user_button"><i class="fa fa-times fa-fw" aria-hidden="true" style="color:#D43F35"></i>Unregister User (non-Admin only)</button>
+	<button class="button-two pull-right" id="refresh_button"><i class="fa fa-refresh fa-fw" aria-hidden="true"></i></button>
+</div>
+<!-- Button Bar -->
+
+<!-- User Table -->
+<div class="table-container">
+	<div class="scroll-container"> <!-- allowing horizontal scrolling for the table -->
+		<table st-table="vm.users" st-safe-src="vm.rowCollection" class="table">
+			<thead>
+				<tr> <!-- table header -->
+					<th st-sort="username" st-sort-default="true">Username</th>
+					<th st-sort="name">Name</th>
+					<th st-sort="email">Email</th>
+					<th st-sort="registered">Registered</th>
+					<th st-sort="admin">Admin Role</th>
+				</tr>
+				<tr> <!-- table search bar -->
+					<th colspan=1>
+						<input st-search="name" placeholder="Search Name" class="input-sm form-control search-bar-outline" type="search"/>
+					</th>
+					<th colspan=1>
+						<input st-search="username" placeholder="Search Username" class="input-sm form-control search-bar-outline" type="search"/>
+					</th>
+					<th colspan=3>
+						<input st-search placeholder="Global Search" class="input-sm form-control search-bar-outline" type="search"/>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr st-select-row="user" st-select-mode="single" ng-repeat="user in vm.users">
+					<!-- table data -->
+					<td>{{ user.username }}</td>
+					<td>{{ user.name }}</td>
+					<td>{{ user.email }}</td>
+					<td><i class="fa fa-check-circle-o" aria-hidden="true" style="color:#14A62F" ng-if="user.registered"></i><i class="fa fa-times-circle-o" aria-hidden="true" style="color:#D43F35" ng-if="!user.registered"></i></td>
+					<td><i class="fa fa-check-circle-o" aria-hidden="true" style="color:#14A62F" ng-if="user.admin"></i><i class="fa fa-times-circle-o" aria-hidden="true" style="color:#D43F35" ng-if="!user.admin"></i></td>
+			</tbody>
+			<tfoot>
+				<tr> <!-- pagination -->
+					<td colspan = "5" class="text-center">
+						<div st-pagination="" st-items-by-page="20" st-displayed-pages="10"></div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div> 
+</div>
+<!-- /User Table -->

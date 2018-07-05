@@ -1,0 +1,35 @@
+<!-- /public/angular-app/faq/faq.html -->
+
+<!-- Header -->
+<div class="jumbotron text-center">
+	<h1>{{ vm.title }}</h1>
+</div>
+<!-- /Header -->
+
+<div class="table-container">
+	<p style="font-size:14pt"><b>General Questions</b></p>
+	<ul>
+		<li><i>What is the Siemens AWS Management Console?</i></li>
+		<p>The Siemens AWS Management Console allows for quick and easy access to Amazon Web Services EC2 Instances. The console allows for users to list, search, sort, start, stop, delete, and create EC2 instances. Click on <a href="/#!/manage-instances">Manage Existing Instances</a> or <a href="/#!/new-instance">Start New Instance</a> to get started!</p>
+		<li><i>How is the Siemens AWS Management Console useful?</i></li>
+		<p>The Siemens AWS Management Console was created to support faster software testing and deployment by opening controlled access of AWS EC2 Instances to our employees. With the portal, the process for testing developed software on the cloud is streamlined for easy initiation and maintenance.</p>
+	</ul>
+	<p style="font-size:14pt"><b>Managing Existing Instances</b></p>
+	<ul>
+		<li><i>How do I view and manage existing instances?</i></li>
+		To start, click on <a href="/#!/manage-instances">Manage Existing Instances</a>. This page will list out all existing Siemens EC2 instances in a table. If you would like to sort the instances by any category, such as Instance Name, Instance Id, Platform, Availability Zone, etc., click on the corresponding table header. A small triangle will be displayed next to the header by which the instances in the table are sorted. By default, all instances are sorted by Instance Name. If you would like to search for an element, you can use the search bar under the headers to either search by Instance Name, Instance Id, or by a global search. If your window is smaller than the table, scroll horizontally to uncover the rest of the table. To move on to the next page of the table, see the bottom of the table, which includes a page navigation bar.
+		<li><i>How do I start/stop/delete existing instances?</i></li>
+		Click on <a href="/#!/manage-instances">Manage Existing Instances</a>. This page will list out all existing Siemens EC2 instances in a table. Select the rows on which you would like to perform an action such as starting, stopping, or deleting. Then, click on the corresponding button to trigger the action. An alert will be issued if an error occurs. If no error occurs, the table will be reloaded with the new information. Check that your action has been registered on the table. 
+		<li><i>How do I view more information on an instance than displayed on the table?</i></li>
+		To view more information on an instance than displayed on the table, click on the icon in the "Details" column of the table within the row corresponding to the specific instance you would like to learn more about. This icon will redirect you to a new page with more information on the instance.
+	</ul>
+	<p style="font-size:14pt"><b>Creating New Instances</b></p>
+	<ul>
+		<li><i>Where do I create a new instance?</i></li>
+		To start, click on <a href="/new-instance">Start New Instance</a>.
+		<li><i>How do I create a new instance?</i></li>
+		Fill out the form on <a href="/new-instance">Start New Instance</a>.
+		<li><i>How do I add a name to my instance?</i></li>
+		Names are added as tags to the instance. Please make sure that the key for the name tag is spelled "Name", with an uppercase "N". This helps retain our instance naming convention.
+	</ul>
+</div>

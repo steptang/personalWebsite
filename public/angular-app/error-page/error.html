@@ -1,0 +1,29 @@
+<!-- public/angular-app/error-page/error.html -->
+
+<!-- Header -->
+<div class="jumbotron text-center">
+	<h1>{{ vm.title }}</h1>
+	<h3>{{ vm.subtitle }}</h3>
+</div>
+<!-- /Header -->
+
+<div class="error-info-container">
+	<h4><b>Error Details</b></h4>
+	<h5>Error Type: {{ vm.errorType}}</h5>
+	<h5>Error Message: {{ vm.errorMessage}}</h5>
+</div>
+<div class="error-info-container">
+	<h4><b>General Info on Errors</b></h4>
+	<h5>Possible reasons why:</h5>
+	<ul>
+		<li><b>Service was temporarily down.</b> Try reloading the page.</li>
+		<li><b>Your request was invalid.</b> You may have submitted a request that is unauthorized or invalid</li>
+		<li><b>A link you followed to get here was in error.</b> Please navigate within the console to find the proper link to your requested information.</li>
+		<li><b>The web address was mistyped.</b> Please navigate within the console to find the proper link to your requested information.</li>
+	</ul>
+	<h5>What now?</h5>
+	<ul>
+		<li>Wait a few minutes. It is possible that our service is temporarily down.</li>
+		<li>If the problem persists, please contact us.</li>
+	</ul>
+</div>

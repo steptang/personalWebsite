@@ -1,0 +1,67 @@
+<!-- /public/index.html -->
+<!DOCTYPE html>
+<html ng-app="console">
+	<!-- Header -->
+	<head>
+		<title>Stephanie Tang</title>
+		<link href="css/bootstrap.min.css" rel=stylesheet />
+		<link href="css/custom.css" rel=stylesheet />
+	</head>
+	<!-- /Header -->
+
+	<body>
+		<!-- Navigation Bar -->
+		<mh-navigation></mh-navigation>
+		<!--/Navigation Bar -->
+
+		<!-- Angular Body -->
+		<div ng-view></div>
+		<!-- /Angular Body -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted text-center">
+					<a href="https://www.stephaniestang.com" target="_blank"><img src="/images/favicon.png" height="26" alt="Stephanie Tang"/></a>
+				</p>
+				<p class="text-muted text-center">
+					<small style="font-family:Josefin Slab; color:black;">Stephanie Tang</small>
+				</p>
+			</div>
+		</footer>
+		<!-- /Footer -->
+
+		<!-- Scripts & Dependencies -->
+		<script src="jquery/jquery-3.2.1.min.js"></script>
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="node_modules/angular-smart-table/dist/smart-table.min.js"></script>
+		<script src="node_modules/angular-smart-table/dist/smart-table.js"></script>
+		<script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+		<script src="node_modules/angular-cookies/angular-cookies.js"></script>
+		<script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+		<script src="angular-app/app.js"></script>
+		<script src="angular-app/services/shared-properties.js"></script>
+		<script src="angular-app/main-page/main-page-controller.js"></script>
+		<script src="angular-app/error-page/error-page-controller.js"></script>
+		<script src="angular-app/register/register-controller.js"></script>
+		<script src="angular-app/login/login-controller.js"></script>
+		<script src="angular-app/about-me/about-me.js"></script>
+		<script src="angular-app/projects/projects.js"></script>
+		<script src="angular-app/manage-users/user-controller.js"></script>
+		<script src="angular-app/profile/profile-controller.js"></script>
+		<script src="angular-app/auth/auth-factory.js"></script>
+		<script src="angular-app/auth/auth-interceptor.js"></script>
+		<script src="angular-app/navigation-directive/navigation-directive.js"></script>
+		<script src="angular-app/art/art.js"></script>
+		<script src="angular-app/community/community.js"></script>
+		<script src="angular-app/hardware/hardware.js"></script>
+		<script src="angular-app/programming/programming.js"></script>
+		<script src="angular-app/projects/projects.js"></script>
+		<script src="angular-app/womens-empowerment/womens-empowerment.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Domine|Josefin+Slab|Lobster|Pacifico|Poiret+One|Satisfy" rel="stylesheet">
+		<!-- /Scripts & Dependencies -->
+	</body>
+</html>
