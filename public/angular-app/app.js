@@ -31,7 +31,7 @@ function config($httpProvider, $routeProvider) {
 		})
 		.when('/projects', {
 			templateUrl: 'angular-app/projects/projects.html',
-			controller: AboutMeController,
+			controller: ProjectsController,
 			controllerAs: 'vm',
 			access: {
 				user_restricted: false,
@@ -77,6 +77,15 @@ function config($httpProvider, $routeProvider) {
 		.when('/womens-empowerment', {
 			templateUrl: 'angular-app/womens-empowerment/womens-empowerment.html',
 			controller: WomensController,
+			controllerAs: 'vm',
+			access: {
+				user_restricted: false,
+				admin_restricted: false
+			}
+		})
+		.when('/projects/:id', {
+			templateUrl: 'angular-app/project-display/project-display.html',
+			controller: ProjectController,
 			controllerAs: 'vm',
 			access: {
 				user_restricted: false,

@@ -1,14 +1,18 @@
 [{
 	"name": "Herlocked",
-	"caption": "A phone controlled door lock that is easily installable into pre-existing locks. FemmeHacks 2017 Intel Best Hardware Hack, Softeon Most Innovative Hack",
-	"description": "",
-	"picture": "",
+	"caption": "A phone-controlled door lock that is easily installable into pre-existing mechanical door locks. FemmeHacks 2017 Intel Best Hardware Hack, Softeon Most Innovative Hack.",
+	"description": "\tHerlocked is a device that can be easily installed into a pre-existing lock system to make it phone controllable. HerLocked works by sitting in the lockset, not affecting the locking machanism when the lock toggle is activated. When unlock is toggled, the linear actuator pushes the latch inwards, preventing the latch from entering the lockset. The lock toggle can be accessed through a smarphone app, so the door can be locked and unlocked with ease. This project was inspired by the new door locks installed at Penn that autolock when the door is closed. Many students have been continuously leaving their doors propped open with their deadbolts due to the recent lock update, making their rooms easy targets for theft. \nIn terms of hardware, this project was built with an Arduino Uno R3, Red Bear Lab BLE Shield, and linear actuator, while the sofware was built with C, HTML, CSS, and JS.",
+	"picture": "/images/herlocked.jpg",
+	"tools": "Arduino, Red Bear Labs BLE Shield, C, HTML/CSS, Javascript",
+	"links": [{"Devpost":"https://devpost.com/software/herlock"}],
 	"type": "software"
 },
 {
 	"name": "Vehicular Edge Simulator",
 	"caption": "An event driven simulation that models autonomous vehicles and their service requests to the cloud.",
-	"description": "",
-	"picture": "",
+	"description": "\tAs part of a research project under Dr. Insup Lee and Dr. Deepak Gangadaran, I built an event-driven simulation program that models vehicles and their service requests within a cloud network. The program is built to evaluate task distribution algorithms, offering more data analysis for autonomous car development.",
+	"picture": "/images/vehicularedgesimulator.png",
+	"tools": "Java, CloudSim Library, SUMO Traffic Simulator",
+	"links": [{"Github":"https://github.com/steptang/VehicularCloudSim"}, {"PHICWIC 2018":"https://nvite.com/PHICWIC2018/npvpyg"}, {"Presentation Slides":"https://docs.google.com/presentation/d/1DTyZ_RCiLG3DNOVr1vHsMZs8Gw4ZcjWnEfTtg092nss/edit?usp=sharing"}],
 	"type": "software"
 }]

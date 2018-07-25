@@ -17,6 +17,14 @@ var projectSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
+	tools: {
+		type: String,
+		required: true
+	},
+	links: {
+		type: [{String: String}],
+		required: true
+	},
 	type: {
 		type: String,
 		required: true

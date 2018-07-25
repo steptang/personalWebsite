@@ -1498,21 +1498,59 @@ h6 a:hover {
   outline-color: #313131;
   outline-offset: 10px;
   color: #313131;
-  transition: margin 0.5s ease;
+  transition: margin 0.5s ease, padding 0.5s ease;
 }
 
-#proj1:hover{
-	margin: 2%;
+a.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
 }
 
-#proj2:hover{
+.proj1:hover{
 	margin: 2%;
+	padding: 7%;
 }
 
-#proj3:hover{
-	margin: 2%;
+.projimg{
 }
 
-#proj4:hover{
-	margin: 2%;
+.display-project{
+	padding-right:20px;
 }
+
+.project-description{
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.smallimg{
+	height: 400px;
+    width: auto;
+}
+
+.dispimage{
+	width: 900px;
+    line-height: : auto;
+}
+
+p { font-family: "Helvetica Neue"; font-style: normal; font-variant: normal; font-weight: 150;}
