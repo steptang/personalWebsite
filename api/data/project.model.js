@@ -11,7 +11,7 @@ var projectSchema = new mongoose.Schema({
 	},
 	description: {
 		type: String,
-		required: true
+		required: false
 	},
 	picture: {
 		type: String,
@@ -22,12 +22,16 @@ var projectSchema = new mongoose.Schema({
 		required: true
 	},
 	links: {
-		type: [{String: String}],
+		type: [[String, String]],
 		required: true
 	},
 	type: {
 		type: String,
 		required: true
+	},
+	bullets: {
+		type: [String],
+		required: false
 	}
 });
 

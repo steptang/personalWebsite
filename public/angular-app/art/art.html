@@ -2,10 +2,17 @@
     <h1 style="font-family:Lobster;">Art Projects</h1>
 	<p style="font-family:Satisfy;">"If opportunity doesn't knock, build a door" - Milton Berle</p>
 </div>
-	<div class="container-fluid" id="main">
-        <div ng-repeat="project in vm.projects" class="siteContainer proj1">
-          <a class="divLink" ng-href="/#!/projects/{{ project._id }}"></a>
-          <p style="font-size: 20pt;">{{project.name}}</p>
-          <img src="/images/hardware.png" alt="" class="site">
-        </div>
+<div class="container-fluid" style="padding-bottom:30px;" id="main">
+    <div ng-repeat="project in vm.projects" class="siteContainer proj1">
+    	<!--a class="divLink" ng-href="/#!/projects/{{ project._id }}"></a-->
+   		<div class="row">
+   			<div class="display-project">
+   				<img src="{{project.picture}}" class="site projimg img-responsive dispimage">
+   			</div>
+      		<div class="col">
+          		<p style="font-size: 20pt;"><b>{{project.name}}</b></p>
+          		<p style="font-size: 18pt;">{{project.caption}}</p>
+      		</div>
+  	  	</div>
+    </div>
 </div>

@@ -1,18 +1,216 @@
 [{
 	"name": "Herlocked",
 	"caption": "A phone-controlled door lock that is easily installable into pre-existing mechanical door locks. FemmeHacks 2017 Intel Best Hardware Hack, Softeon Most Innovative Hack.",
-	"description": "\tHerlocked is a device that can be easily installed into a pre-existing lock system to make it phone controllable. HerLocked works by sitting in the lockset, not affecting the locking machanism when the lock toggle is activated. When unlock is toggled, the linear actuator pushes the latch inwards, preventing the latch from entering the lockset. The lock toggle can be accessed through a smarphone app, so the door can be locked and unlocked with ease. This project was inspired by the new door locks installed at Penn that autolock when the door is closed. Many students have been continuously leaving their doors propped open with their deadbolts due to the recent lock update, making their rooms easy targets for theft. \nIn terms of hardware, this project was built with an Arduino Uno R3, Red Bear Lab BLE Shield, and linear actuator, while the sofware was built with C, HTML, CSS, and JS.",
+	"description": "Herlocked is a device that can be easily installed into a pre-existing lock system to make it phone controllable. HerLocked works by sitting in the lockset, not affecting the locking machanism when the lock toggle is activated. When unlock is toggled, the linear actuator pushes the latch inwards, preventing the latch from entering the lockset. The lock toggle can be accessed through a smarphone app, so the door can be locked and unlocked with ease. This project was inspired by the new door locks installed at Penn that autolock when the door is closed. Many students have been continuously leaving their doors propped open with their deadbolts due to the recent lock update, making their rooms easy targets for theft. Thus, we decided to make a phone-controlled lock that could be installable into our own dorm locks without damaging them or needing a replacement lock. \nIn terms of hardware, this project was built with an Arduino Uno R3, Red Bear Lab BLE Shield, and linear actuator, while the sofware was built with C, HTML, CSS, and JS.",
 	"picture": "/images/herlocked.jpg",
 	"tools": "Arduino, Red Bear Labs BLE Shield, C, HTML/CSS, Javascript",
-	"links": [{"Devpost":"https://devpost.com/software/herlock"}],
+	"links": [["Devpost","https://devpost.com/software/herlock"]],
 	"type": "software"
 },
 {
 	"name": "Vehicular Edge Simulator",
 	"caption": "An event driven simulation that models autonomous vehicles and their service requests to the cloud.",
-	"description": "\tAs part of a research project under Dr. Insup Lee and Dr. Deepak Gangadaran, I built an event-driven simulation program that models vehicles and their service requests within a cloud network. The program is built to evaluate task distribution algorithms, offering more data analysis for autonomous car development.",
+	"description": "As part of a research project under Dr. Insup Lee and Dr. Deepak Gangadharan, I built an event-driven simulation program that models vehicles and their service requests within a cloud network. The goal of our project is to advance the field of Vehicular Edge Computing, which is the concept of having vehicles submit tasks to the Cloud, and the Cloud distributing these tasks via a task distribution algorithm to edges. Edges are devices that are closer to the vehicle, for example in streetlights or at a crossroads. The edges then perform the necessary computation and send the information requested by the vehicle to the vehicle. Because they are much closer to the end-user, this process reduces delay in responding to vehicular requests. Applications of edge computing research includes more efficient transportation and reducing traffic congestion via more on-board computations of gps data and servicing computation-heavy multimedia applications. However, edge computing also introduces new problems. It increases computational complexity as vehicles become expected to handle more services, require more board computing power, memory storage, and sensor capabilities. It also introduces new algorithmic questions such as how do we schedule and service tasks from incoming vehicles in the cloud or at edge devices. How do we distribute the tasks we receive from vehicles between various edges? At the same time, all of this complexity is dependent on a large variety of factors such as the speed of each car in the system, the computational requirements of each task, the paths of each car in relation to the edges, the placement of the edges, etc. Thus, our study of vehicular edge computing relies on lots of computations that drastically change based on different scenarios the system is exhibiting. Thus, the focus of my research is to build an event-driven simulation for vehicular edge computing scenarios. The simulation is able to take as input a wide variety of factors such as vehicle speeds, networking capabilities of the edge, types of applications that the vehicle would run, at what point thse vehicles submit requests, etc. such that all types of vehicular edge computing scenarios are covered. To do this, I designed and built mobility, networking, and load generation models parameterized by the simulation inputs. Finally, the simulation uses these inputs to run and produce outputs. This includes computations of the statistics of different task-distribution algorithms for comparison, such as the percentage of tasks completed via a certain algorithm as compared to another. Currently, we are working with Toyota to evaluate the outputs of the simulation program.",
 	"picture": "/images/vehicularedgesimulator.png",
 	"tools": "Java, CloudSim Library, SUMO Traffic Simulator",
-	"links": [{"Github":"https://github.com/steptang/VehicularCloudSim"}, {"PHICWIC 2018":"https://nvite.com/PHICWIC2018/npvpyg"}, {"Presentation Slides":"https://docs.google.com/presentation/d/1DTyZ_RCiLG3DNOVr1vHsMZs8Gw4ZcjWnEfTtg092nss/edit?usp=sharing"}],
+	"links": [["Github","https://github.com/steptang/VehicularCloudSim"], ["PHICWIC 2018 Research Talk","https://nvite.com/PHICWIC2018/npvpyg"], ["PHICWIC 2018 Presentation Slides","https://docs.google.com/presentation/d/1v-B63q1wdxJRA-i3YyrYiPJhp4fT3K-BcM15M21egLA/edit?usp=sharing"]],
 	"type": "software"
+},
+{
+	"name": "Pay Receipt App Scanner",
+	"caption": "An iPhone App that scans your receipt and allows you to assign each purchased item to a different person, calculates the proper totals for each person (tax and tip included) based on the percentage of the bill they spent, and charges each person's venmo account for that amount.",
+	"description": "Pay is an iPhone app that scans your receipt and allows you to assign each purchased item to a different person, calculates the proper totals for each person (tax and tip included) based on the percentage of the bill they spent, and charges each person's Venmo account for that amount. The app allows for you to create an account, sign in, scan your reciept, add other users to your reciept, assign items to other users, input the tip amount, and charge all users with the click of a button. This app was inspired by how difficult it is to split the bill at dinners with a group of over 10 people. Passing the reciept around, waiting for people to calculate their sums, and reminding people to make their payments can prove to be a huge hassle. Thus, this app is designed to help ease this process and facilitate the computations and charging with the click of a button.",
+	"picture": "/images/pay.png",
+	"tools": "XCode, Swift, BlinkOCR, Firebase",
+	"links": [["Github","https://github.com/steptang/pay"]],
+	"type": "software"
+},
+{
+	"name": "When2Meet Mobile",
+	"caption": "A remake of the web app When2Meet into an Android application, allowing for users to post events, invite users to their event, poll for times that work for each person to meet, visualize the overlap of everyone's inputted schedules, select a time for the event, and notify others via auto-generated emails.",
+	"description": "When2Meet Mobile is a remake of the web app When2Meet into an Android application, allowing for users to post events, invite users to their event, poll for times that work for each person to meet, visualize the overlap of everyone's inputted schedules, select a time for the event, and notify others via auto-generated emails. This application was developed as part of a group of four people, and thus good practices for github integration became a large part of the learning process. This project was inspired by the fact that the original When2Meet is difficult to use on mobile platforms, as it was designed for a web application. Furthermore, it does not have certain features that would be useful for planning meetings, such as locking users out from editing after the meeting time has been selected, making the overlap schedule blind to other users until they put in their own schedule (so to avoid the common scenario where people fill out less times than they are available in order to sway the overlap calendar to a specific time they desire), etc.",
+	"picture": "/images/when2meet.png",
+	"tools": "Android Studios, Git, Java, Firebase, AndroidBetterTimePickers",
+	"links": [["Github","https://github.com/steptang/when-2-meet"], ["Documentation", "https://docs.google.com/document/d/1b5wMi2j7kHdxHTpsFHf4gHCN0y7EjOiRliV2eRbSb-U/edit?usp=sharing"]],
+	"type": "software"
+},
+{
+	"name": "Tweet Classifier",
+	"caption": "Implementation of Naive Bayes, logistic regression and k-nearest neighbors to predict labels of emotion based on Tweet texts.",
+	"description": "Implementation of Naive Bayes, logistic regression and k-nearest neighbors to predict labels of emotion based on Tweet texts.",
+	"picture": "/images/tweetclassifier.png",
+	"tools": "MATLAB",
+	"links": [["Github","https://github.com/steptang/VehicularCloudSim"], ["PHICWIC 2018","https://nvite.com/PHICWIC2018/npvpyg"], ["Presentation Slides","https://docs.google.com/presentation/d/1DTyZ_RCiLG3DNOVr1vHsMZs8Gw4ZcjWnEfTtg092nss/edit?usp=sharing"]],
+	"type": "software"
+},
+{
+	"name": "Personal Website",
+	"caption": "A website to display my profile, projects, and interests. The website is built from scratch with a backend API that dynamically populates the frontend interface.",
+	"description": "I built this website using the MEAN stack (MongoDB, Express, Angular 4 and Node) from scratch. This includes a backend API that stores all of my projects and project information that dynamically populates the frontend interface. I am hosting this website and node server via Amazon AWS.",
+	"picture": "/images/personalwebsite.png",
+	"tools": "MongoDB, Express, Angular 4, Node, AWS",
+	"links": [["Github","https://github.com/steptang/personalWebsite"]],
+	"type": "software"
+},
+{
+	"name": "Chinese Checkers",
+	"caption": "A two-player mini-game of Chinese Checkers made from scratch in Java",
+	"description": "This is a mini-game of Chinese Checkers made from scratch in Java. It includes a GUI that the user can interact with and score table.",
+	"picture": "/images/chinesecheckers.png",
+	"tools": "Java",
+	"links": [["Github","https://github.com/steptang/ChineseCheckers"], ["Video Demo", "https://drive.google.com/file/d/0B8Ze0P5WJ-V-RGZpLV9EbjViNWc/view?usp=sharing"]],
+	"type": "software"
+},
+{
+	"name": "Drum Band",
+	"caption": "A virtual drum kit! Complete with hit detection algorithms, bluetooth connection and haptic feedback, this build allows for anyone to start drumming in the air.",
+	"description": "College life puts a stop to a lot of things. One of which, for many people, is practicing their beloved instruments. Large instruments like the drums and the piano can't be brought to school, not to mention any sort of practice will easily disturb others in the dorm. We decided to solve this problem by creating a virtual drum kit, where you can drum in the air. Thus, our team has developed an air drum set that would allow drum set enthusiasts to play the drums through the motion of two drumsticks, eliminating the need to drag along cumbersome equipment to practice. To accomplish this, we are using an Adafruit 9-DOF IMU breakout chip to read X, Y, and Z acceleration values that are then processed by an Arduino Uno. We created a reference acceleration profile to see what a hit looked like and are matching against that case to detect hits, with programming done in the Arduino IDE. The sensor is also sending heading and pitch readings to the arduino, which we are using to distinguish between different hits for the different instruments of the drum set. We are using the Processing application to listen in on the arduino serial port and play the correct sound files through the laptop speakers when the corresponding hit is detected. Depending on where a hit is detected in 3D space, your computer will play a different drum sound based on which drum of the entire drum set you hit in 3D space. In order to communicate between the arduino and the computer, we have a bluetooth connection established by HC-05 chips so you can play and swing wirelessly. Finally, we have added haptic motors to provide for haptic feedback when a hit is detected.",
+	"picture": "/images/drumband.png",
+	"tools": "Arduino, C, Processing, Java, HC-05",
+	"links": [["Devpost", "https://devpost.com/software/drumband-he92rc"],["Github","https://github.com/steptang/DrumBand"],["Video Demo","https://www.youtube.com/watch?v=xEi9IHuigDk"]],
+	"type": "hardware"
+},
+{
+	"name": "Herlocked",
+	"caption": "A phone-controlled door lock that is easily installable into pre-existing mechanical door locks. FemmeHacks 2017 Intel Best Hardware Hack, Softeon Most Innovative Hack.",
+	"description": "Herlocked is a device that can be easily installed into a pre-existing lock system to make it phone controllable. HerLocked works by sitting in the lockset, not affecting the locking machanism when the lock toggle is activated. When unlock is toggled, the linear actuator pushes the latch inwards, preventing the latch from entering the lockset. The lock toggle can be accessed through a smarphone app, so the door can be locked and unlocked with ease. This project was inspired by the new door locks installed at Penn that autolock when the door is closed. Many students have been continuously leaving their doors propped open with their deadbolts due to the recent lock update, making their rooms easy targets for theft. Thus, we wanted to create a lock that could be installed into our own door locks without damaging school property or requiring a change of locks, which is not allowed. \nIn terms of hardware, this project was built with an Arduino Uno R3, Red Bear Lab BLE Shield, and linear actuator, while the sofware was built with C, HTML, CSS, and JS.",
+	"picture": "/images/herlocked.jpg",
+	"tools": "Arduino, Red Bear Labs BLE Shield, C, HTML/CSS, Javascript",
+	"links": [["Devpost","https://devpost.com/software/herlock"]],
+	"type": "hardware"
+},
+{
+	"name": "Activity Monitor Wearable",
+	"caption": "Designed a step counter and heart rate monitor UPPAAL model for state diagram verification and built a POC with an mbed, esp8266, and Processing code.",
+	"description": "This project involves the modelling, implementation, and verification of an Activity Tracker wearable system for human use. The monitor is designed to record heart rate and footstep data from the human, post the data to the cloud via MQTT, and send “Move Alerts” to the human if a long period of inactivity is detected. The first step of the development process was to develop models of the system in UPPAAL. At a high level, the system is divided into a human model and a machine model. The human combines the heartbeat and the steps under a single clock (the single clock is modeled by the brain’s tick signals). Signals from these models are tracked by the Activity Monitor through the step monitor and heart monitor models, which calculate the corresponding BPM and step count for the user. In order to implement this project, we used two LPC1768 mbed microcontrollers: one for the human model and one for the activity tracker. In order to communicate with the MQTT server, we utilized the ESP8266 Wireless Module with the mbed MQTT libraries to communicate with the MQTT broker. Our implementation is segmented such that two mbeds run concurrently: the mbed_human to represent the human body (footsteps and heartbeats), and the activity_tracker to represent our fitness tracker. Furthermore, in addition to posting our updates to the cloud via MQTT, we implemented a logger to record incoming serial data from our activity tracker mbed, save it into a CSV, and then plot the data.",
+	"picture": "/images/activitymonitorwearable.png",
+	"tools": "UPPAAL, mbed, esp8266, MQTT, Processing",
+	"links": [],
+	"type": "hardware"
+},
+{
+	"name": "Morse Code Decoder",
+	"caption": "Built a morse code decoder using polling and interrupts on an output switch.",
+	"description": "Our team built a morse code decoder by designing the below circuit schematic. The circuit powers an LED via interrupts based on when the '#' key is pressed. Then, using the TCNT1 Register, which overflows approximately every 4ms, and the TIMSK1 timer overflow interrupt, we classify a dash as the key being pressed for 200 ms and a dot as the key being pressed for 30 to 200ms. Then, we programmed the microcontroller to decode the symbols based on morse code. Finally, we added microphones for audio control and decoding audio clip segments of morse code.",
+	"picture": "/images/morsecodedecoder.png",
+	"tools": "Arduino, Interrupts, Timers",
+	"links": [],
+	"type": "hardware"
+},
+{
+	"name": "Audio Dock System",
+	"caption": "An audio dock system that can filter and amplify various frequencies (the bass, the treble, etc.) of musical inputs from your phone.",
+	"description": "This project can be divided into three main components: the filters, the amplifiers, and final integration. Musical input often involves signals of various frequencies. Frequency (denoted as f) is the number of cycles per second of an inputed signal, and relates to the pitch of the sound we hear when the signal is played. A filter is a signal processing circuit capable of selectively restrict certain electronic signals from being transferred from source to load based on the frequency of the signals. For the filter component of this project, we built a filter to function as the bass, which filtered out higher frequencies and only allowed relatively lower frequencies to pass through (about 150 Hz to 350 Hz), and another to act as the treble, which filtered out the lower frequencies and only allowed the relatively higher frequencies to pass through (about 8 kHz to 10kHz). The bass was designed as a low pass filter, a filter that restricts higher frequencies, with a cutoff frequency of 350 Hz. The cutoff frequency is the frequency at which only about 70.7% of the signal is allowed to pass through the filter. The treble, on the other hand, was designed as a bandpass filter, which restricts frequencies below a certain lower bound (the lower cut-off frequency), and frequencies above a certain higher bound (the higher cut-off frequency). At the resonant frequency, the transfer rate of the signal or the amount of signal transferred from the source to the load, is at the maximum. Both the bass and treble were active second-order filters. An active filter is made from circuits with active devices, devices that require an external source of energy for its operation, such as operational amplifiers or transistors. By using active filters, we are able to control the gain, the ratio of the voltage outputted to voltage inputted, of the circuit to be slightly above 1 V/V so that the amplitude of the signal outputted is about the same as that of the signal inputted. A second-order filter refers to the order of the circuit itself, or the highest power of w in the transfer function. The second portion of this project is the amplifier. For each amplifier, we used one transistor, a device that regulates current flow by acting as a gate for electronic signals. By controlling the current flow through the transistor based on the input voltage attached to the gate, the circuit is able to control the current passing through a resistor attached to the drain.  By setting the speaker with an 8 Ohm resistance as the “resistor attached to the drain,” we were able to deliver an amplified signal to the speaker.",
+	"picture": "/images/audiodock.jpg",
+	"tools": "Lowpass filter, highpass filter, amplifier, audio visual basics, circuit design",
+	"links": [],
+	"type": "hardware"
+},
+{
+	"name": "Self Balancing Robot",
+	"caption": "Built and implemented a self-balancing robot using an mbed, mrf24j40, a4988, and mpu6050 and controller using an mbed, mrf248, and joystick.",
+	"description": "Out team built and implemented a self-balancing robot using an mbed, mrf24j40, a4988, and mpu6050 and controller using an mbed, mrf248, and joystick. The robot could be controlled by the joystick, could handle small disturbances (pushes) and recover quickly, and dynamically adjust its center of balance with small to no oscillations.",
+	"picture": "/images/selfbalancingrobot.jpg",
+	"tools": "mbed, C++, motor drivers, wireless communication",
+	"links": [],
+	"type": "hardware"
+},
+{
+	"name": "Rechargeable Bike Light",
+	"caption": "A rechargeable bike light PCB designed with Altium and encasing designed with Solidworks.",
+	"description": "A rechargeable bike light PCB designed with Altium and encasing designed with Solidworks. The PCB design includes a USB Input, Single Cell LiPo Charger, Voltage Regulator, and white LED Output.",
+	"picture": "/images/bikelight.png",
+	"tools": "Altium, Solidworks",
+	"links": [],
+	"type": "hardware"
+},
+{
+	"name": "Women in Computer Science",
+	"caption": "President (2018-2019), VP of Advocacy (2017-2018), VP of Sponsorship (2016-2017)",
+	"bullets": ["Google IgniteCS 2016 Lead Mentor for teaching Robotics class at TechItOut (www.techitoutphilly.com)", "Penn Representative for CAPWiC, regional Grace Hopper Conference (www.capwic.org) co-hosted by six universities", "Created and implemented the CSterhood Stories Project, where women and allies can share their experiences studying in Computer Science related fields", "Selected as one of two undergraduate representatives to attend weekly CS Faculty Departmental meetings", "Created the first annual WiCS Diversity Census to study metrics on diversity and inclusion such as microagression, anonymous vs in-class participation, general wellness, and workplace scenarios.", "Upstarted the WiCS sponsorship program, increasing funding from $3k to $13.5k and creating scholarships for 15 women"],
+	"picture": "",
+	"tools": "",
+	"links": [["Penn WiCS Website", "https://wics.cis.upenn.edu/"], ["CSterhood Stories", "https://www.facebook.com/CISterhood-Stories-750498921995732/"], ["Percentage Project feature on the Daily Pennsylvanian", "http://www.thedp.com/article/2018/04/wics-women-computer-science-percent-project-social-media-upenn-penn-philadelphia"]],
+	"type": "community"
+},
+{
+	"name": "CIS 195: iPhone App Development",
+	"caption": "Instructor (2018-2019), Teaching Assistant (2017-2018)",
+	"bullets": ["Hired by university to teach iPhone App Development (1 out of 8 students that teaches his/her own class at Penn", "Plan and hold lectures, hire and organize TA team, build weekly iOS app assignments, design tutorials, and grade assignments"],
+	"picture": "",
+	"tools": "",
+	"links": [["Course Website", "https://www.google.com.hk/search?q=cis+195&oq=cis+195&aqs=chrome..69i57j69i61l3j0l2.1573j0j1&sourceid=chrome&ie=UTF-8"]],
+	"type": "community"
+},
+{
+	"name": "PennApps",
+	"caption": "Director of Sponsorship (2017S, 2017F), Sponsorship Committee Member (2016F)",
+	"bullets": ["Manage and monitor 500-600 emails sent out by the sponsorship committee to potential sponsors for PennApps, currently the world’s largest collegiate hackathon", "Lead team of 6 people to support all PennApps sponsorship duties such as opening ceremonies, closing ceremonies, demo day, judges deliberations, etc."],
+	"picture": "",
+	"tools": "",
+	"links": [["PennApps Website", "http://pennapps.com/"]],
+	"type": "community"
+},
+{
+	"name": "Bell Senior Society",
+	"caption": "Social Chair (2018-2019)",
+	"bullets": ["Technology and Entrepreneurship Society", "Organize social events for our class of 2019 members including off-campus retreats, QPQs, and other social bonding and team building events"],
+	"picture": "",
+	"tools": "",
+	"links": [["Bell Senior Society Website", "http://bellseniorsociety.com"]],
+	"type": "community"
+},
+{
+	"name": "Engineering Masters Advisory Board",
+	"caption": "Board Member (2017-2018)",
+	"bullets": ["Helped create and organize the first annual EMAB Tutoring Program, where we select and hire student tutors for masters classes based on surveys for where masters students need the most guidance", "Interviewed potential candidates for Machine Learning tutors"],
+	"picture": "",
+	"tools": "",
+	"links": [],
+	"type": "community"
+},
+{
+	"name": "Alpha Omega Epsilon",
+	"caption": "Merchandise Chair (2017-2018)",
+	"bullets": ["Ordered and sold custom merchandise for around 60 women through my own custom merchandise shop, Penn Shipper"],
+	"picture": "",
+	"tools": "",
+	"links": [],
+	"type": "community"
+},
+{
+	"name": "Electrical and Systems Engineering Student Board Representative",
+	"caption": "Board Member (2015-2016)",
+	"bullets": ["Held professional development events as part of the Professional Committee"],
+	"picture": "",
+	"tools": "",
+	"links": [],
+	"type": "community"
+},
+{
+	"name": "Penn Badminton",
+	"caption": "Captain (2016-2017), Competitive Team Player (2015-2018)",
+	"bullets": ["Organize tryouts, team practices, socials, tournament trips, team website", "Recruited other members of the Badminton Board 2016-2017"],
+	"picture": "",
+	"tools": "",
+	"links": [["Website", "https://upennbadminton.wordpress.com/"]],
+	"type": "community"
+},
+{
+	"name": "TEDx Concordia Shanghai",
+	"caption": "Speaker (2015)",
+	"bullets": ["Spoke about the importance of collaboration and teamwork in channeling one’s creativity and in transforming creative ideas into realities"],
+	"picture": "",
+	"tools": "",
+	"links": [["Website", "https://tedx.concordiashanghai.org/speakers/"], ["Youtube Video", "https://www.youtube.com/watch?v=wcfqWxyhKfU&index=5&list=PL9FPZBGnXCxU9E449KgjH7PEeeyTCdEs6"]],
+	"type": "community"
+},
+{
+	"name": "",
+	"caption": "",
+	"description": "",
+	"picture": "/images/comingsoon.png",
+	"tools": "",
+	"links": [],
+	"type": "art"
 }]

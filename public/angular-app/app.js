@@ -74,7 +74,7 @@ function config($httpProvider, $routeProvider) {
 				admin_restricted: false
 			}
 		})
-		.when('/womens-empowerment', {
+		.when('/honors-awards', {
 			templateUrl: 'angular-app/womens-empowerment/womens-empowerment.html',
 			controller: WomensController,
 			controllerAs: 'vm',

@@ -8,6 +8,7 @@ function ProjectController($http, $routeParams) {
 		$http.get(addr).then(function(response) {
 			console.log(response.data);
 			vm.project = response.data;
+			vm.links = vm.project.links.keys();
 		}).catch(function(error) {
 			console.log(error);
 		});

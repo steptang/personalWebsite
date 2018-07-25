@@ -6,6 +6,11 @@
 	<div class="col">
    		<div class="project-description">
       		<p>{{ vm.project.description }}</p>
+      		<p>Tools: {{ vm.project.tools }}</p>
+      		<p ng-if="vm.project.links.length != 0">For more information, check out these links!</p>
+      		<ul>
+      			<li style="font-size:16pt" ng-repeat="link in vm.project.links"><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+      		</ul>
       	</div>
       	<div class="display-project">
    			<img src="{{vm.project.picture}}" class="site projimg img-responsive smallimg centered">
