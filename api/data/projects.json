@@ -44,13 +44,13 @@
 	"type": "software"
 },
 {
-	"name": "Personal Website",
-	"caption": "A website to display my profile, projects, and interests. The website is built from scratch with a backend API that dynamically populates the frontend interface.",
-	"description": "I built this website using the MEAN stack (MongoDB, Express, Angular 4 and Node) from scratch. This includes a backend API that stores all of my projects and project information that dynamically populates the frontend interface. I am hosting this website and node server via Amazon AWS.",
-	"picture": "/images/personalwebsite.png",
-	"tools": "MongoDB, Express, Angular 4, Node, AWS",
-	"links": [["Github","https://github.com/steptang/personalWebsite"]],
-	"type": "software"
+    "name": "Personal Website",
+    "caption": "A website to display my profile, projects, and interests. The website is built from scratch with a backend API that dynamically populates the frontend interface.",
+    "description": "I built this website using the MEAN stack (MongoDB, Express, Angular 4 and Node) from scratch. This includes a backend API that stores all of my projects and project information that dynamically populates the frontend interface. I am hosting this website and node server via Heroku and mlab.",
+    "picture": "/images/personalwebsite.png",
+    "tools": "MongoDB, Express, Angular 4, Node, Heroku, mlab",
+    "links": [["Github","https://github.com/steptang/personalWebsite"]],
+    "type": "software"
 },
 {
 	"name": "Chinese Checkers",
