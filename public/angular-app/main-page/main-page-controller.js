@@ -10,10 +10,10 @@ function MainController($cookies, AuthFactory) {
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
-    var h = 500;
+    var h = 250;
     var w = $(window).width();
     
-    var nh = Math.floor(Math.random() * h)+350;
+    var nh = Math.floor(Math.random() * h)+300;
     var nw = Math.floor(Math.random() * w);
     
     return [nh,nw];    

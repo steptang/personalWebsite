@@ -1,15 +1,15 @@
 <div class="jumbotron text-center">
     <h1 style="font-family:Lobster;">{{ vm.project.name }}</h1>
-	<p style="font-family:Satisfy;">"If opportunity doesn't knock, build a door" - Milton Berle</p>
+	<p style="font-family:Satisfy;font-size: 12pt">"If opportunity doesn't knock, build a door" - Milton Berle</p>
 </div>
 <div class="jumbotron" style="padding-top: 30pt; padding-bottom: 70pt;">
 	<div class="col">
    		<div class="project-description">
-      		<p>{{ vm.project.description }}</p>
-      		<p>Tools: {{ vm.project.tools }}</p>
-      		<p ng-if="vm.project.links.length != 0">For more information, check out these links!</p>
+      		<p style="font-size:12pt">{{ vm.project.description }}</p>
+      		<p style="font-size:12pt">Tools: {{ vm.project.tools }}</p>
+      		<p style="font-size:12pt" ng-if="vm.project.links.length != 0">For more information, check out these links!</p>
       		<ul>
-      			<li style="font-size:16pt" ng-repeat="link in vm.project.links"><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+      			<li style="font-size:12pt" ng-repeat="link in vm.project.links"><a href="{{ link[1] }}">{{ link[0] }}</a></li>
       		</ul>
       	</div>
       	<div class="display-project">

@@ -47,7 +47,10 @@ app.use('/api', routes);
 app.use(favicon(path.join(__dirname, 'public', '/images/favicon.png')))
 
 //start the server
-var server = app.listen(process.env.PORT || app.get('port'), function(){
+var server = app.listen(app.get('port'), function(){
 	var port = server.address().port;
 	console.log('Magic happens on port ' + port);
 });
+
+//var server = app.listen(process.env.PORT || app.get('port'), function(){
+
