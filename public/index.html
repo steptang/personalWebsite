@@ -6,6 +6,19 @@
 		<title>Stephanie Tang</title>
 		<link href="css/bootstrap.min.css" rel=stylesheet />
 		<link href="css/custom.css" rel=stylesheet />
+		<script>
+  (function(name,path,ctx){var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
+})('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.4.2.min.js',this);
+
+  KeenAsync.ready(function(){
+    var client = new KeenAsync({
+      projectId: '5b59ea0dc9e77c0001eef337',
+      writeKey: '87B21BAF334508F971FE98BFC41C0BE9F2D512FC57E302CFE937FCF94F7CC96345BC74BF5C2EE9E8B316D6AA960D77D7E819A592EC9B6CAEEBE6DE632947223B4E018DD39EA3937E94CAE62788960AB14CD29E9BBF161DD4BDB6D2EA46B55D65'
+    });
+
+    client.initAutoTracking();
+  });
+  </script>
 	</head>
 	<!-- /Header -->
 
