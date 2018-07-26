@@ -3,8 +3,8 @@
 
 //Imports & Dependencies
 var mongoose = require('mongoose');
-var dburl = 'mongodb://localhost:27017/personalPage';
-//var dburl = 'mongodb://steptang:Wen97jin!@ds155461.mlab.com:55461/personalwebsite';
+//var dburl = 'mongodb://localhost:27017/personalPage';
+var dburl = 'mongodb://steptang:Wen97jin!@ds155461.mlab.com:55461/personalwebsite';
 var retry = null;
 
 //connect to the dburl
