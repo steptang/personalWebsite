@@ -1565,3 +1565,7 @@ p, li { font-family: "Helvetica Neue"; font-style: normal; font-variant: normal;
 .sized {
 	font-size: 5pt;
 }
+
+.small {
+	font-family:Satisfy;color:black;
+}
